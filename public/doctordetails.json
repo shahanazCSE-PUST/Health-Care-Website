@@ -1,0 +1,53 @@
+{
+    "doctor": [
+        {
+            "id": 2,
+            "name": "Dr. Mizanur Rahman",
+            "degree": "MBBS (RMC), D. Card (BSMMU)",
+            "skills":"Cardiology",
+            "about":"Dr. Mizanur is a Consultant Cardiologist with over 17 years of work experience. He completed his MBBS from Rangpur Medical College and his post-graduate Diploma in Cardiology from Bangabandhu Sheikh Mujib Medical University. He has attended various training, conferences, and workshops related to Cardiology and Internal Medicine. He worked in Bangabandhu Sheikh Mujib Medical University from 2003 to 2005 as an Assistant Register (Medicine). He later worked at Dhaka Medical College and Hospital from 2007 to 2009 as an Assistant Register (Cardiology). He then moved back to Bangabandhu Sheikh Mujib Medical University and worked there as the Residential Medical Officer in Cardiology and Medicine from 2013 to 2016. Starting 2018 he is also working as EMD and Consultant Cardiologist at Nasrail Sadar Hospital.",
+            "img": "https://praavahealth.com/wp-content/uploads/elementor/thumbs/Mizanur-Rahman-e1616536852669-p4nrvhwlkbbx2e69x12o09kjgj8fx6unji9t85arr4.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Dr. AHM Masud Sinha",
+            "degree": "MBBS, D. Card, FACC",
+            "skills":"Plastic & General Surgeon",
+            "about":"Dr. AHM Masud Sinha, MD (USA), is a Professor of Medicine. He has over 27 years of experience, including working at Brooklyn Jewish Medical Center, New York, Bangladesh Medical College and Hospital, United Hospital, and Lab Aid. Over the course of his career, Dr. Tarek attended several workshops and trainings abroad including in Australia, Geneva, Indonesia, Japan, Malaysia and Thailand. Dr. Tarek, also has a Fellowship in Pulmonary Medicine.",
+            "img": "https://praavahealth.com/wp-content/uploads/elementor/thumbs/Dr.-Masud-Sinha-e1616536755908-p4nrsyq95dv3s7uppfnusektu5pu6jsouyzpob1yio.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Dr. Wahida Khan",
+            "degree": "MBBS, DDV, FCPS",
+            "skills":"Dermatology",
+            "about":"Dr. Wahida completed her MBBS in 1992 from Sylhet MAG Osmani Medical College. She later completed her Diploma in Dermatology & Venereology (DDV) from Dhaka Medical College in 2010. She finished her FCPS (Dermatology) from Bangladesh College of Physicians and Surgeons in 2011. She has worked as a Cosmetic and Laser specialist. She is the former Head of Dermatology & Venereology of Shahabuddin Medical College and Hospital where she worked from 2011 to 2018.",
+            "img": "https://praavahealth.com/wp-content/uploads/elementor/thumbs/Dr.-Wahida-Khan-Chowdhury-e1616534721208-p4nqbuuj0d5vtcztth8owt19kfh9a6ynk423jhsq2o.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Dr. Naz Yasmin",
+            "degree": "MBBS, FCPS, MS",
+            "skills":"Gynaecology",
+            "about":"Dr. Naz Yasmin MBBS (DMC), FCPS (BCPS), MS (DU) is an Assistant Professor of Obstetrics and Gynecology. She has over 20 years of experience, including working at International Medical College and Hospital. Over the course of her career, Dr. Naz attended several workshops and trainings.",
+            "img": "https://praavahealth.com/wp-content/uploads/elementor/thumbs/drnaz-e1616321816443-p4jfwwdym5dbm1ov837gb38o84ve3hacxtufn64agw.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Dr. Md. Kabir Khan",
+            "degree": "MBBS, MPH, FCGP,FCPS",
+            "skills":"Family Medicine",
+            "about":"Dr. (Lt. Colonel) Khan has over 32 years of experience working as a physician. He earned his Bachelor’s degree in Medicine and Surgery in 1986 from Rangpur Medical College and received his MPH (Public Health) from AFMI in the year 2000. He obtained his CCD (Diabetology) from BIRDEM in 2007 and later in 2009, FCPS (Family Medicine) from BCPS. Dr. Khan served in various military base clinics in Kuwait armed forces and Bangladesh armed forces. During this tenure of his career, he also provided outpatient services to troops and civilians in remote locations. Aside from being Praava’s Consultant Family Physician, Dr. Khan also serves as a Family Medicine Specialist in CMH in Dhaka.",
+            "img": "https://praavahealth.com/wp-content/uploads/elementor/thumbs/drkabir-1-p2ympaccm8pwbfwlrncjq9eyh4023brqezdyip69qs.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Dr. Taslima Akter",
+            "degree": "MBBS, CCD (BIRDEM), DMU,FCGP",
+            "skills":"Respiratory Medicine",
+            "about":"Dr. Taslima Akter MBBS, DMU, CCD (BIRDEM), is a Family Doctor with over 12 years of experience working in reputed medical facilities including CWC, Royal Health Park, Hill View General Hospital, CMH, and Prescription Point. Over the course of her career, she has attended several workshops and trainings at home and abroad.",
+            "img": "https://praavahealth.com/wp-content/uploads/elementor/thumbs/5c440f0578d69-p2ynfbhfw2cruo3crefla6xiq9p09k44btt1zkkrf8.jpg"
+        }
+    ]
+  }
+  

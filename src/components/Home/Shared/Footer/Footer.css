@@ -1,0 +1,12 @@
+.my-link *:not(:hover) {
+    text-decoration: none;
+}
+.my-footer {
+    background-color: #35363a;
+}
+.iconbar i{
+    color:purple;
+    padding: 10px;
+    margin-left: 10px;
+
+}

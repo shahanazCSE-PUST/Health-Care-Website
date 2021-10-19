@@ -1,0 +1,45 @@
+[
+    {
+        "id": 2,
+        "name": "Dr. Mizanur Rahman",
+        "degree": "MBBS (RMC), D. Card (BSMMU)",
+		"skills":"Cardiology",
+        "img": "https://praavahealth.com/wp-content/uploads/elementor/thumbs/Mizanur-Rahman-e1616536852669-p4nrvhwlkbbx2e69x12o09kjgj8fx6unji9t85arr4.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Dr. AHM Masud Sinha",
+        "degree": "MBBS, D. Card, FACC",
+		"skills":"Plastic & General Surgeon",
+        "img": "https://praavahealth.com/wp-content/uploads/elementor/thumbs/Dr.-Masud-Sinha-e1616536755908-p4nrsyq95dv3s7uppfnusektu5pu6jsouyzpob1yio.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Dr. Wahida Khan",
+        "degree": "MBBS, DDV, FCPS",
+		"skills":"Dermatology",
+        "img": "https://praavahealth.com/wp-content/uploads/elementor/thumbs/Dr.-Wahida-Khan-Chowdhury-e1616534721208-p4nqbuuj0d5vtcztth8owt19kfh9a6ynk423jhsq2o.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Dr. Naz Yasmin",
+        "degree": "MBBS, FCPS, MS",
+		"skills":"Gynaecology",
+        "img": "https://praavahealth.com/wp-content/uploads/elementor/thumbs/drnaz-e1616321816443-p4jfwwdym5dbm1ov837gb38o84ve3hacxtufn64agw.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Dr. Md. Kabir Khan",
+        "degree": "MBBS, MPH, FCGP,FCPS",
+		"skills":"Family Medicine",
+        "img": "https://praavahealth.com/wp-content/uploads/elementor/thumbs/drkabir-1-p2ympaccm8pwbfwlrncjq9eyh4023brqezdyip69qs.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Dr. Taslima Akter",
+        "degree": "MBBS, CCD (BIRDEM), DMU,FCGP",
+		"skills":"Respiratory Medicine",
+        "img": "https://praavahealth.com/wp-content/uploads/elementor/thumbs/5c440f0578d69-p2ynfbhfw2cruo3crefla6xiq9p09k44btt1zkkrf8.jpg"
+    }
+    
+]

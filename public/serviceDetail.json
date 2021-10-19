@@ -1,0 +1,47 @@
+{
+    "service": [
+      {
+        "id": 1,
+        "name": "Laboratory Tests",
+        "price": "5000",
+        "description":"Learn about medical tests,check to see if treatment is working, or monitor the condition over time. A doctor may order these tests as part of a routine checkup, to check for certain diseases and disorders, or to monitor your health.",
+        "img": "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2018/12/24/769065-laboratory-tests-shutterstock-122418.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Imaging & Other Diagnostic Tests",
+        "price": "3000",
+        "description": "Medical imaging is the technique and process of imaging the interior of a body for clinical analysis and medical intervention, as well as visual representation of the function of some organs or tissues (physiology).",
+        "img": "https://www.oakbendmedcenter.org/wp-content/uploads/2020/10/Oakbend_October_Blog_Interior-2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Medical Services",
+        "price": "5000",
+        "description": "Medical services means medical and health care services provided to a Person, including, but not limited to, medical and health care services provided to a Person which are covered by a policy of insurance, and includes, without limitation, physician services, nurse and therapist services, dental services",
+        "img": "https://st4.depositphotos.com/1907633/20440/i/600/depositphotos_204408788-stock-photo-health-care-medical-services-concept.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Home Health Check Up",
+        "price": "3000",
+        "description": "A customized health check tailored around your needs that includes 20 lab tests and one video consultation with a Praava Family Doctor. With a single call, we will be at your doorstep to collect your sample anywhere within Dhaka.",
+        "img": "https://www.klinicapp.com/blog/wp-content/uploads/2019/12/Webp.net-resizeimage-10-960x540.png"
+    },
+    {
+        "id": 5,
+        "name": "Pharmacy",
+        "price": "4000",
+        "description": "Popular Medicine corner is a well-known retailer of medicine in Bangladesh. We provide all kinds of life saving medicine, which are available in all branches of Popular Diagnostics Ltd. Our aim is to provide good medicine and best service quality to the patients.",
+        "img": "https://www.rdasia.com/wp-content/uploads/sites/2/2020/02/00-pharmacist-shutterstock_1345420442-770.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Video consultation benefits",
+        "price": "500",
+        "description": "Video consultations from the comfort of your home Are you putting your health on hold because you can’t see a doctor in person? Is reliable healthcare turning out to be expensive",
+        "img": "https://i.ibb.co/zJy5ZDd/6.jpg"
+    }
+    ]
+  }
+  
