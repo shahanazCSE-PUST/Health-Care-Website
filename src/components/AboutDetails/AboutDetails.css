@@ -1,3 +1,6 @@
+.about-details-container{
+    min-height: calc(100vh - 256px);
+}
 .item {
     display: grid;
     grid-template-columns: repeat(4, min-content);
@@ -14,6 +17,7 @@
     flex-direction: column;
     justify-content: center;
 }
+/* Make it responsive */
 @media only screen and (max-width:688px) {
     .item{
         grid-template-columns: repeat(1, 1fr);

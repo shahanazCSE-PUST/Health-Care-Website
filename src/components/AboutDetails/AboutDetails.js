@@ -7,8 +7,8 @@ import './AboutDetails.css'
 
 const AboutDetails = () => {
     return (
-        <div>
-            <h2 className="text-primary fw-bold fs-1 my-5">Our Goal</h2>
+        <div className="about-details-container">
+            <h2 className="text-primary my-5">Our Goal</h2>
             <div>
                 <ol className="text-start">
                     <li>To render the world standard diagnostic service to the people of the country at an affordable cost and in turn to limit the outflow of the patient abroad at the expense of heard earn foreign currency by providing quality diagnostic services.</li>
@@ -20,7 +20,7 @@ const AboutDetails = () => {
                 </ol>
             </div>
             <div>
-                <h2 className="text-primary fw-bold fs-1 my-5">Our Corporate Clients</h2>
+                <h2 className="text-primary my-5">Our Corporate Clients</h2>
                 <div className="item mb-5">
                     <img src={im1} alt="" />
                     <img src={im2} alt="" />

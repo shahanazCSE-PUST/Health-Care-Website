@@ -18,10 +18,10 @@ const Details = () => {
       console.log(serviceDetail);
 
     return (
-        <div id="">
-            <div className="my-5">
+        <div className="doctor-details">
+            <div className="">
               <img src={serviceDetail?.img} alt="" />
-              <h3>{serviceDetail?.name}</h3>
+              <h3 className="pt-5">{serviceDetail?.name}</h3>
               <p className="px-3">{serviceDetail?.description}</p>
             </div>
         </div>

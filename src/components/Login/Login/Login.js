@@ -7,7 +7,6 @@ const Login = () => {
   const { signInWithEmail, handleGoogleSignIn, userEmail, userPassword, error } = useAuth();
   const location = useLocation();
   const history = useHistory();
-  // const [error ,setError]=useState("");
   const [isLoading, setIsLoading] =useState(true);
   const signInUsingGoogle = () => {
     setIsLoading(true);
@@ -16,14 +15,13 @@ const Login = () => {
         history.push(location.state?.from || '/home');
         // setUser(result.user);
         console.log(result.user);
-       
       })
       .finally(() => setIsLoading(false));
 
   }
   
   return (
-    <div className="w-25 m-auto p-3 border rounded my-5">
+    <div className="w-25 m-auto p-3 mt-3 border rounded">
       <h2 className="text-secondary mb-3">Please Log in</h2>
       <div className="text-danger" style={{ height: "50px" }}>
         {error}

@@ -20,7 +20,7 @@ const Doctors = () => {
             </div>
             <div className="col-lg-7">
             <div id="doctors">
-            <h2 className="text-primary fw-bold fs-1 my-5">Meet Our Doctors</h2>
+            <h2 className="text-primary  my-5 fw-bold fs-1">Meet Our Doctors</h2>
             <div className="doctors-container">
                 {
                     doctors.map(doctor => <Doctor

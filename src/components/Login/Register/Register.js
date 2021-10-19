@@ -6,7 +6,7 @@ import useAuth from "../../../hooks/useAuth";
 const Register = () => {
   const { error,toggleLogin, getName,isLogin, getImage, getEmail, userRegistration, getPassword,useremail} = useAuth();
   return (
-    <div className="w-25 m-auto p-3 my-5 border rounded">
+    <div className="w-25 m-auto p-3 mt-3 border rounded">
       <h1 className="text-primary text-center">{isLogin ? 'Please Login' : 'Please Register'}</h1>
       <div className="text-danger" style={{ height: "50px" }}>
         {error}

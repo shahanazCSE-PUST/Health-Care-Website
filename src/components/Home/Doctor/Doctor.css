@@ -1,13 +1,10 @@
 .doctor{
     background-color: rgb(226, 241, 241);
-    border-radius: 8px;
-    padding: 1rem;
     
 }
-.doctor:hover {
-    border-color: #ccc #bbb #aaa #ddd;
-    box-shadow: 0 0 1rem 0 #999, inset 0 0 0 1px #fff;
-  }
+.for-padding-top{
+    padding-top: 1rem;
+}
 .doctor img{
     width: 110px;
     height: 110px;
