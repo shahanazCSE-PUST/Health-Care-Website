@@ -24,8 +24,8 @@ const Login = () => {
   return (
     <div className="login-container">
       <h2 className="text-success py-3 fs-3 fw-bold">{massege}</h2>
-      <div className="w-25 m-auto p-3 mt-3 border rounded">
-        <h2 className="text-secondary mb-3">Please Log in</h2>
+      <div className="w-25 m-auto p-3 mt-3 border rounded custom-width">
+        <h2 className="text-primary text-center mb-3">Please Log in</h2>
         <div className="text-danger" style={{ height: "50px" }}>
           {error}
         </div>

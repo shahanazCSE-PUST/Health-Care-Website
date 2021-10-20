@@ -1,3 +1,6 @@
 .login-container{
     min-height: calc(100vh - 312px);
 }
+.custom-width{
+    min-width: 300px;
+}
