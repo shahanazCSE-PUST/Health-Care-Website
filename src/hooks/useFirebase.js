@@ -115,6 +115,7 @@ const useFirebase = () => {
         //   window.location.reload(true);
         setMassege("You Have Successfully Logged in!");
         setError('');
+        window.location.replace("/home");
       })
       .catch((error) => {
         setError(error.message);

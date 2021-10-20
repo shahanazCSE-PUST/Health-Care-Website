@@ -54,7 +54,7 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>the trusted and friendly medical professionals.</h3>
+                        <h3>The trusted and friendly medical professionals.</h3>
                         <p>Happy to see you healthy</p>
 
                     </Carousel.Caption>
