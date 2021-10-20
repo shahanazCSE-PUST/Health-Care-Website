@@ -15,7 +15,7 @@ const Doctors = () => {
 
     return (
         <div className="row">
-            <div class="col-lg-5 mt-5 left-img">
+            <div className="col-lg-5 mt-5 left-img">
                 <img src={image3} alt="" />
             </div>
             <div className="col-lg-7">
