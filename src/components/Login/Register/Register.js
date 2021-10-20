@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
+import './Register.css'
 
 
 const Register = () => {
   const { error, getName, isLogin, getEmail, userRegistration, getPassword, useremail } = useAuth();
   return (
-    <div>
+    <div className="register-container">
       <div className="w-25 m-auto p-3 mt-3 border rounded">
         <h1 className="text-primary text-center">{isLogin ? 'Please Login' : 'Please Register'}</h1>
         <div className="text-danger" style={{ height: "50px" }}>

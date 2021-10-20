@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useHistory, useLocation } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
+import './Login.css'
 
 
 const Login = () => {
@@ -21,7 +22,7 @@ const Login = () => {
   }
 
   return (
-    <div>
+    <div className="login-container">
       <h2 className="text-success py-3 fs-3 fw-bold">{massege}</h2>
       <div className="w-25 m-auto p-3 mt-3 border rounded">
         <h2 className="text-secondary mb-3">Please Log in</h2>
