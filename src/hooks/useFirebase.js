@@ -18,7 +18,7 @@ const useFirebase = () => {
   const [userpassword, setuserPassword] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const history = useHistory();
-  const [alert, setAlert] = useState('');
+  const [massege, setMassege] = useState('');
   const [isLogin, setIsLogin] = useState(false);
 
   const toggleLogin = e => {
@@ -83,6 +83,7 @@ const useFirebase = () => {
         const user = result.user;
         console.log(user);
         setError("");
+        alert('Registration Successful !!!');
         // setAlert("Registration Successful!");
         logOut();
         window.location.replace("/login");
@@ -112,7 +113,7 @@ const useFirebase = () => {
         console.log(useremail);
         setUser(result.user)
         //   window.location.reload(true);
-        setAlert("You Have Successfully Logged in!");
+        setMassege("You Have Successfully Logged in!");
         setError('');
       })
       .catch((error) => {
@@ -147,12 +148,12 @@ const useFirebase = () => {
       .then(() => {
         setUser({})
         setError('');
-        setAlert('Logged Out!')
+        setMassege('Logged Out!')
       })
       .finally(() => setIsLoading(false));
   }
 
-  return { user, alert, error, isLoading, toggleLogin, isLogin, userRegistration, getName, getImage, getEmail, getPassword, userEmail, userPassword, signInWithEmail, handleGoogleSignIn, logOut }
+  return { user,massege, error, isLoading, toggleLogin, isLogin, userRegistration, getName, getImage, getEmail, getPassword, userEmail, userPassword, signInWithEmail, handleGoogleSignIn, logOut }
 
 }
 

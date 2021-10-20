@@ -4,7 +4,7 @@ import useAuth from "../../../hooks/useAuth";
 
 
 const Login = () => {
-  const { signInWithEmail, handleGoogleSignIn, userEmail, userPassword, error,alert } = useAuth();
+  const { signInWithEmail, handleGoogleSignIn, userEmail, userPassword, error,massege } = useAuth();
   const location = useLocation();
   const history = useHistory();
   const [isLoading, setIsLoading] = useState(true);
@@ -22,7 +22,7 @@ const Login = () => {
 
   return (
     <div>
-      <h2 className="text-success py-3 fs-3 fw-bold">{alert}</h2>
+      <h2 className="text-success py-3 fs-3 fw-bold">{massege}</h2>
       <div className="w-25 m-auto p-3 mt-3 border rounded">
         <h2 className="text-secondary mb-3">Please Log in</h2>
         <div className="text-danger" style={{ height: "50px" }}>
