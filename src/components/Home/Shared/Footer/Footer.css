@@ -5,8 +5,13 @@
     background-color: #35363a;
 }
 .iconbar i{
-    color:purple;
+    color:rgb(20, 20, 160);
+    background-color: white;
     padding: 10px;
     margin-left: 10px;
 
+}
+.iconbar i:hover{
+    color:white;
+    background-color: rgb(20, 20, 160);
 }

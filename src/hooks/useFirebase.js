@@ -110,6 +110,7 @@ const signInWithEmail = e => {
       console.log(user);
       setUser(result.user)
       setError('');
+      window.location.reload();
   })
   .catch((error) => {
       setError(error.message);
@@ -142,6 +143,7 @@ const logOut = () => {
     signOut(auth)
     .then(() => {
         setUser({})
+        setError('');
     })
     .finally(() => setIsLoading(false));
 }

@@ -7,4 +7,4 @@ This is assignment 10 and my project is about making a Health care Wesite.
 - I have implemented Email and password based Authentication.beside this I have implemented google authentication.
 - I have made the website responsive for desktop and mobile.I have tried my best to make the most of the things shown in this Millstone.
 ## live link
-You can see the [live link of this project]()
+You can see the [live link of this project](https://competent-hamilton-0fdf7e.netlify.app/)
