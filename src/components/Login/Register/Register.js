@@ -4,10 +4,9 @@ import useAuth from "../../../hooks/useAuth";
 
 
 const Register = () => {
-  const { error, alert, toggleLogin, getName, isLogin, getEmail, userRegistration, getPassword, useremail } = useAuth();
+  const { error, getName, isLogin, getEmail, userRegistration, getPassword, useremail } = useAuth();
   return (
     <div>
-      <h2 className="text-success py-3">{alert}</h2>
       <div className="w-25 m-auto p-3 mt-3 border rounded">
         <h1 className="text-primary text-center">{isLogin ? 'Please Login' : 'Please Register'}</h1>
         <div className="text-danger" style={{ height: "50px" }}>

@@ -83,8 +83,9 @@ const useFirebase = () => {
         const user = result.user;
         console.log(user);
         setError("");
-        setAlert("Registration Successful!");
+        // setAlert("Registration Successful!");
         logOut();
+        window.location.replace("/login");
       })
       .catch((error) => {
         setError(error.message);
@@ -111,6 +112,7 @@ const useFirebase = () => {
         console.log(useremail);
         setUser(result.user)
         //   window.location.reload(true);
+        setAlert("You Have Successfully Logged in!");
         setError('');
       })
       .catch((error) => {
@@ -145,6 +147,7 @@ const useFirebase = () => {
       .then(() => {
         setUser({})
         setError('');
+        setAlert('Logged Out!')
       })
       .finally(() => setIsLoading(false));
   }
