@@ -1,4 +1,4 @@
-import { getAuth, GoogleAuthProvider, signInWithPopup,  onAuthStateChanged, createUserWithEmailAndPassword, updateProfile, sendEmailVerification, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, createUserWithEmailAndPassword, updateProfile, sendEmailVerification, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import initializeAuthentication from "../components/Login/Firebase/firebase.init";
@@ -16,8 +16,9 @@ const useFirebase = () => {
   const [password, setPassword] = useState("");
   const [useremail, setuserEmail] = useState("");
   const [userpassword, setuserPassword] = useState("");
-  const [isLoading, setIsLoading] =useState(true);
+  const [isLoading, setIsLoading] = useState(true);
   const history = useHistory();
+  const [alert, setAlert] = useState('');
   const [isLogin, setIsLogin] = useState(false);
 
   const toggleLogin = e => {
@@ -26,129 +27,129 @@ const useFirebase = () => {
     setIsLoading(false);
     console.log(isLogin);
   }
-  const getName = e =>{
+  const getName = e => {
     setName(e.target.value);
-}
-const getImage = e =>{
+  }
+  const getImage = e => {
     setImage(e.target.value);
-}
+  }
 
-const getEmail = e =>{
+  const getEmail = e => {
     setEmail(e.target.value);
-}
+  }
 
-const getPassword = e =>{
+  const getPassword = e => {
     setPassword(e.target.value);
-}
+  }
 
-const userEmail = e => {
+  const userEmail = e => {
     setuserEmail(e.target.value)
-}
+  }
 
-const userPassword = e => {
+  const userPassword = e => {
     setuserPassword(e.target.value)
-}
+  }
 
 
 
-const setUserInfo = () => {
-  updateProfile(auth.currentUser, {
+  const setUserInfo = () => {
+    updateProfile(auth.currentUser, {
       displayName: name, photoURL: image
     }).then(() => {
-      
+
     }).catch((error) => {
       setError(error.message)
     });
-}
+  }
 
-const userRegistration = e => {
-  e.preventDefault();
-  console.log(email, password);
-  if(email.length === 0){
+  const userRegistration = e => {
+    e.preventDefault();
+    console.log(email, password);
+    if (email.length === 0) {
       setError("Please enter your email")
       return;
-  }
-  if(password.length === 0){
+    }
+    if (password.length === 0) {
       setError("Please enter a password");
       return;
-  }
-  if(password.length < 6){
+    }
+    if (password.length < 6) {
       setError("Password should be at least 6 charecters");
       return;
-  }
- createUserWithEmailAndPassword(auth, email, password)
-  .then(result => {
-      setUserInfo();
-      const user = result.user;
-      console.log(user);
-      setError("");
-  })
-  .catch((error) => {
-      setError(error.message);
-  })
-  
-}
+    }
+    createUserWithEmailAndPassword(auth, email, password)
+      .then(result => {
+        setUserInfo();
+        const user = result.user;
+        console.log(user);
+        setError("");
+        setAlert("Registration Successful!");
+        logOut();
+      })
+      .catch((error) => {
+        setError(error.message);
+      })
 
-const signInWithEmail = e => {
+  }
+
+  const signInWithEmail = e => {
     setIsLoading(true);
-  e.preventDefault();
-  if(useremail.length === 0){
+    e.preventDefault();
+    if (useremail.length === 0) {
       setError("Please give your email")
       return;
-  }
-  if(userpassword.length === 0){
+    }
+    if (userpassword.length === 0) {
       setError("Please give your password")
       return;
+    }
+
+
+    signInWithEmailAndPassword(auth, useremail, userpassword)
+      .then(result => {
+        const user = result.user;
+        console.log(useremail);
+        setUser(result.user)
+        //   window.location.reload(true);
+        setError('');
+      })
+      .catch((error) => {
+        setError(error.message);
+      })
+      .finally(() => setIsLoading(false));
   }
-
- console.log();
- console.log(userpassword);
-
-  signInWithEmailAndPassword(auth, useremail, userpassword)
-  .then(result => {
-      const user = result.user;
-      console.log(user);
-      setUser(result.user)
-      setError('');
-      window.location.reload();
-  })
-  .catch((error) => {
-      setError(error.message);
-  })
-  .finally(() => setIsLoading(false));
-}
   const handleGoogleSignIn = () => {
-  setIsLoading(true);
-   return signInWithPopup(auth, googleProvider)
+    setIsLoading(true);
+    return signInWithPopup(auth, googleProvider)
     //   .then(result => {
     //     setUser(result.user);
     //     console.log(result.user);
     //   })
     setIsLoading(false);
   }
-  useEffect(()=>{
+  useEffect(() => {
     onAuthStateChanged(auth, (user) => {
-        if (user) {
-          setUser(user)
-        }
-        else {
-            setUser({});
-        }
+      if (user) {
+        setUser(user)
+      }
+      else {
+        setUser({});
+      }
       setIsLoading(false);
-      });
-},[])
+    });
+  }, [])
 
-const logOut = () => {
+  const logOut = () => {
     setIsLoading(true);
     signOut(auth)
-    .then(() => {
+      .then(() => {
         setUser({})
         setError('');
-    })
-    .finally(() => setIsLoading(false));
-}
+      })
+      .finally(() => setIsLoading(false));
+  }
 
-return { user, error,isLoading,toggleLogin,isLogin, userRegistration, getName, getImage, getEmail, getPassword, userEmail, userPassword, signInWithEmail, handleGoogleSignIn, logOut }
+  return { user, alert, error, isLoading, toggleLogin, isLogin, userRegistration, getName, getImage, getEmail, getPassword, userEmail, userPassword, signInWithEmail, handleGoogleSignIn, logOut }
 
 }
 
